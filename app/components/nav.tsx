@@ -15,9 +15,9 @@ const NAV_LINKS = [
       { label: "Life & Health", href: "/services/life-health" },
     ],
   },
-  { label: "Get a Quote", href: "#quote" },
-  { label: "Claims", href: "#claims" },
-  { label: "Contact", href: "#contact" },
+  { label: "Get a Quote", href: "/get-a-quote" },
+  { label: "Claims", href: "/claims" },
+  { label: "Contact", href: "/contact" },
 ];
 
 function ShieldIcon({ className }: { className?: string }) {
@@ -188,7 +188,7 @@ export default function Nav() {
 
         {/* ── Desktop CTA ── */}
         <Link
-          href="#quote"
+          href="/get-a-quote"
           className="hidden md:inline-flex items-center justify-center px-6 py-2.5 bg-primary text-white font-semibold rounded-full text-sm transition-all duration-200 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 active:translate-y-0"
         >
           Get a Quote
@@ -304,7 +304,7 @@ export default function Nav() {
             {/* Mobile CTA */}
             <div className="pt-4">
               <Link
-                href="#quote"
+                href="/get-a-quote"
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center justify-center w-full min-h-[48px] px-6 py-3 bg-primary text-white font-semibold rounded-full text-base transition-all duration-200 hover:shadow-lg hover:shadow-primary/25"
               >
