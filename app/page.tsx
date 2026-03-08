@@ -1,10 +1,19 @@
+import ScrollHero from "./components/scroll-hero";
+import LogoCloud from "./components/logo-cloud";
+import PinnedServices from "./components/pinned-services";
+import CounterStats from "./components/counter-stats";
+import Testimonials from "./components/testimonials";
+import CtaBanner from "./components/cta-banner";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-surface">
-      <h1 className="text-4xl font-bold tracking-tight text-text-heading">
-        Evergreen Insurance Group
-      </h1>
-      <p className="mt-4 text-lg text-text-body">Coming Soon</p>
-    </main>
+    <>
+      <ScrollHero />
+      <LogoCloud />
+      <PinnedServices />
+      <CounterStats />
+      <Testimonials />
+      <CtaBanner />
+    </>
   );
 }
